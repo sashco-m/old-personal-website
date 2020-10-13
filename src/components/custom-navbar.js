@@ -1,22 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import customNavbar from './components/custom-navbar';
-
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-
-function App() {
-  return (
-    <Navbar bg="light" expand="lg" className="border">
+function customNavbar() {
+    return (
+        <Navbar bg="light" expand="lg" className="border">
         <Navbar.Brand href="#home">Sashco Mistelbacher</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
@@ -33,8 +23,9 @@ function App() {
             </Nav>
         </Navbar.Collapse>
     </Navbar>
+  
+    );
+  }
 
-  );
-}
 
-export default App;
+export default customNavbar;
