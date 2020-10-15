@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function CustomNavbar() {
     return (
-    <Navbar fixed="top" bg="light" expand="lg" className="border">
+    <Navbar style={{opacity:"0.9"}} fixed="top" bg="light" expand="lg" className="border">
         <Navbar.Brand href="#home">Sashco Mistelbacher</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
