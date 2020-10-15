@@ -4,9 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function customNavbar() {
+function CustomNavbar() {
     return (
-        <Navbar bg="light" expand="lg" className="border">
+    <Navbar fixed="top" bg="light" expand="lg" className="border">
         <Navbar.Brand href="#home">Sashco Mistelbacher</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
@@ -28,4 +28,4 @@ function customNavbar() {
   }
 
 
-export default customNavbar;
+export default CustomNavbar;
