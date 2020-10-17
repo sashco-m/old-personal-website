@@ -15,15 +15,23 @@ function App() {
       <Row fluid>
         <Image style={{objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
         <Container className="border" style={{backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} className="" fluid>
-          
-        
+          {/*Make an hr compontent*/}
+            <Row>
+              <Col className="" xl={3} lg={1} ></Col>
+                <Col xl={6} lg={10}>
+                  <hr className="border"></hr>
+                </Col>
+              <Col className="" xl={3} lg={1} ></Col>
+            </Row>
+
+
           <Row style={{textAlign:"center"}} className="m-1" fluid>
           <Col className="" xl={3} lg={1} ></Col>
             <Col xl={3} lg={5}>
-
+              
               <Card className="mb-3" style={{textAlign:"left"}} >                   
-              <Card.Body>
-                <Card.Title>Hello!</Card.Title>
+                <Card.Body>
+                  <Card.Title>Hello!</Card.Title>
                     <Card.Text>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus. Platea dictumst quisque sagittis purus sit. Quis hendrerit dolor magna eget. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Egestas sed tempus urna et pharetra. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Viverra nibh cras pulvinar mattis nunc sed blandit. Suspendisse in est ante in nibh mauris cursus. Elit pellentesque habitant morbi tristique senectus et.
                     </Card.Text>
@@ -33,6 +41,7 @@ function App() {
                 </Card>
             </Col>
             <Col xl={3} lg={5}>
+              
             <Card className="mb-3" style={{textAlign:"left"}} >                   
               <Card.Body>
                 <Card.Title>Goals</Card.Title>
@@ -91,10 +100,11 @@ function App() {
                 </Card>
               </Col>
               </Row>
-
+                <hr className="border"></hr>
               </Col>
               <Col className="" lg={1} xl={3}></Col>
           </Row>
+          
           {/* end of hobbies*/}
 
         {/*end of main container */}
