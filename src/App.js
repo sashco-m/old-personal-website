@@ -16,10 +16,10 @@ function App() {
         <Image style={{objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
         <Container className="border" style={{backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} className="" fluid>
           
+        
           <Row style={{textAlign:"center"}} className="m-1" fluid>
-          <Col className="d-xl-block d-lg-none" xl={1} sm={12}></Col>
+          <Col className="" xl={3} lg={1} ></Col>
             <Col xl={3} lg={5}>
-              <h1 className="m-2" style={{textDecoration:"underline"}}>About</h1>
 
               <Card className="mb-3" style={{textAlign:"left"}} >                   
               <Card.Body>
@@ -32,10 +32,31 @@ function App() {
 
                 </Card>
             </Col>
-            <Col lg={7}>
+            <Col xl={3} lg={5}>
+            <Card className="mb-3" style={{textAlign:"left"}} >                   
+              <Card.Body>
+                <Card.Title>Goals</Card.Title>
+                    <Card.Text>
+                      <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                      </ul>
+                    </Card.Text>
+                  </Card.Body>
+
+                </Card>
               
-              <h1 className="m-2" style={{textDecoration:"underline"}}>Hobbies</h1>
-              <Row>
+            </Col>
+            <Col className="" xl={3} lg={1} ></Col>
+          </Row>
+          {/*end of about section */}
+          <Row className="m-1">
+            <Col className="" xl={3} lg={1} ></Col>
+              <Col className="" lg={10} xl={6}>
+              <Row >
               <Col sm={4}>
                 <Card className="mb-3" style={{textAlign:"left"}} > 
                   <Card.Img variant="top" src="https://i.imgur.com/3oqcDP6.jpg" />
@@ -70,13 +91,23 @@ function App() {
                 </Card>
               </Col>
               </Row>
-            </Col>
-            <Col className="d-xl-block d-lg-none" xl={1} sm={12}></Col>
-          </Row>
-          
 
+              </Col>
+              <Col className="" lg={1} xl={3}></Col>
+          </Row>
+          {/* end of hobbies*/}
+
+        {/*end of main container */}
         </Container> 
 
+
+        <Row className="footer border mt-auto p-3" bg="light" style={{width:"100%"}} fluid>
+          <Col sm={3}></Col>
+          <Col sm={6}>
+            <span className="text-muted"> Sashco Mistelbacher 2020</span>
+          </Col>
+          <Col sm={3}></Col>
+        </Row>
       </Row>
     </div>
   );
