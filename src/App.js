@@ -16,47 +16,41 @@ function App() {
         <Image style={{objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
         <Container className="border" style={{backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} className="" fluid>
           {/*Make an hr compontent*/}
-            <Row>
+            {/* <Row>
               <Col className="" xl={3} lg={1} ></Col>
                 <Col xl={6} lg={10}>
                   <hr className="border"></hr>
                 </Col>
               <Col className="" xl={3} lg={1} ></Col>
-            </Row>
+            </Row> */}
 
 
-          <Row style={{textAlign:"center"}} className="m-1" fluid>
+          <Row style={{textAlign:""}} className="m-1" fluid>
+            
           <Col className="" xl={3} lg={1} ></Col>
-            <Col xl={3} lg={5}>
+            <Col xl={6} lg={10}>
+            <hr className="border"></hr>
               
-              <Card className="mb-3" style={{textAlign:"left"}} >                   
-                <Card.Body>
-                  <Card.Title>Hello!</Card.Title>
-                    <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus. Platea dictumst quisque sagittis purus sit. Quis hendrerit dolor magna eget. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Egestas sed tempus urna et pharetra. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Viverra nibh cras pulvinar mattis nunc sed blandit. Suspendisse in est ante in nibh mauris cursus. Elit pellentesque habitant morbi tristique senectus et.
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Img variant="bottom" src="https://i.imgur.com/VDpuKi9.jpg/100px180" />
-
-                </Card>
-            </Col>
-            <Col xl={3} lg={5}>
-              
-            <Card className="mb-3" style={{textAlign:"left"}} >                   
-              <Card.Body>
-                <Card.Title>Goals</Card.Title>
-                    <Card.Text>
-                      <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                      </ul>
-                    </Card.Text>
-                  </Card.Body>
-
-                </Card>
+              <Row>
+                <Container fluid>
+                  <h1>About</h1>
+                </Container>
+              </Row>
+              <Row className="mb-4">
+                <Col md={6}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
+                  </ul>
+                </Col>
+                <Col md={6}>
+                  <Container className="">
+                  <Image src="https://i.imgur.com/VDpuKi9.jpg" thumbnail/>
+                  </Container>
+                </Col>
+              </Row>
               
             </Col>
             <Col className="" xl={3} lg={1} ></Col>
