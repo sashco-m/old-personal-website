@@ -37,7 +37,7 @@ function App() {
                 </Container>
               </Row>
               <Row className="mb-4">
-                <Col md={6}>
+                <Col md={7}>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <ul>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
@@ -45,10 +45,10 @@ function App() {
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
                   </ul>
                 </Col>
-                <Col md={6}>
-                  <Container className="">
+                <Col md={5}>
+                  
                   <Image src="https://i.imgur.com/VDpuKi9.jpg" thumbnail/>
-                  </Container>
+                  
                 </Col>
               </Row>
               
@@ -100,6 +100,73 @@ function App() {
           </Row>
           
           {/* end of hobbies*/}
+          <Row style={{textAlign:""}} className="m-1" fluid>
+            
+          <Col className="" xl={3} lg={1} ></Col>
+            <Col xl={6} lg={10}>
+              
+              <Row>
+                <Container fluid>
+                  <h1>Projects</h1>
+                </Container>
+              </Row>
+              <Row className="mb-4">
+                <Col md={6}>
+                  {/*start of project cards */}
+                  <Card className="mb-3" > 
+                  <Card.Img variant="top" src="https://i.imgur.com/QVjqovc.png" />
+                  <Card.Body>
+                    <Card.Title>Small Business: Bash Vintage</Card.Title>
+                    <Card.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                </Col>
+                <Col md={6}>
+                <Card className="mb-3" > 
+                  <Card.Img variant="top" src="https://i.imgur.com/WVXL1uG.png" />
+                  <Card.Body>
+                    <Card.Title>Java Travel Agency Database</Card.Title>
+                    <Card.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                
+                </Col>
+              </Row>
+              <Row className="mb-4">
+                <Col md={6}>
+                  {/*start of project cards */}
+                  <Card className="mb-3" > 
+                  <Card.Img variant="top" src="https://i.imgur.com/yDISwgp.png" />
+                  <Card.Body>
+                    <Card.Title>Calculator in React</Card.Title>
+                    <Card.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                </Col>
+                <Col md={6}>
+                <Card className="mb-3" > 
+                  <Card.Img variant="top" src="https://i.imgur.com/8gzBwJu.png" />
+                  <Card.Body>
+                    <Card.Title>Art Portfolio</Card.Title>
+                    <Card.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                
+                </Col>
+              </Row>
+              
+            </Col>
+            <Col className="" xl={3} lg={1} ></Col>
+          </Row>
+          {/* end of projects */}
 
         {/*end of main container */}
         </Container> 
