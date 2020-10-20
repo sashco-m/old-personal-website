@@ -4,17 +4,23 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from './components/custom-navbar.js';
 import CoverImg from './components/CoverImg.js';
+import SectionTitle from './components/SectionTitle.js';
 
 import { Card, Col, Container, Image, Row, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import SectionBody from './components/SectionBody';
 
 function App() {
+  function CardHoverEnter(id){
+    document.getElementById(id).style.transition="transform 1s"
+  }
+
   return (
     <div style={{overflowX:"hidden"}}>
       <CustomNavbar />
       <CoverImg />
-      <Row fluid>
+      <Row>
         <Image style={{objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
-        <Container className="border" style={{backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} className="" fluid>
+        <Container className="border" style={{backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} fluid>
           {/*Make an hr compontent*/}
             {/* <Row>
               <Col className="" xl={3} lg={1} ></Col>
@@ -31,11 +37,7 @@ function App() {
             <Col xl={6} lg={10}>
             <hr className="border"></hr>
               
-              <Row>
-                <Container fluid>
-                  <h1>About</h1>
-                </Container>
-              </Row>
+              <SectionTitle title="About" />
               <Row className="mb-4">
                 <Col md={7}>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -52,6 +54,7 @@ function App() {
                 </Col>
               </Row>
               
+              
             </Col>
             <Col className="" xl={3} lg={1} ></Col>
           </Row>
@@ -66,7 +69,13 @@ function App() {
                   <Card.Body>
                     <Card.Title>Robotics</Card.Title>
                     <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Container fluid>
+                    <a target="_blank" href="https://www.instagram.com/tv/B9mSro9gO8J/?utm_source=ig_web_copy_link">Robot Reveal Video</a>
+                    </Container>
+                    <Container fluid>
+                    <a target="_blank" href="https://imgur.com/a/VX4x7Lx">Photo Album</a>
+                    </Container>
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -105,11 +114,7 @@ function App() {
           <Col className="" xl={3} lg={1} ></Col>
             <Col xl={6} lg={10}>
               
-              <Row>
-                <Container fluid>
-                  <h1>Projects</h1>
-                </Container>
-              </Row>
+              <SectionTitle title="Projects" />
               <Row className="mb-4">
                 <Col md={6}>
                   {/*start of project cards */}
@@ -174,11 +179,7 @@ function App() {
             <Col className="" xl={3} lg={1} ></Col>
               <Col xl={6} lg={10}>
                 
-                <Row>
-                  <Container fluid>
-                    <h1>Work</h1>
-                  </Container>
-                </Row>
+                <SectionTitle title="Work" />
                 <Row>
 
                     <Container fluid>
@@ -235,7 +236,6 @@ function App() {
                 <Col className="" xl={3} lg={1} ></Col>
             </Row>
 
-
           {/* end of work */}
 
         {/*end of main container */}
@@ -245,7 +245,7 @@ function App() {
         <Row className="footer border mt-auto p-3" bg="light" style={{width:"100%"}} fluid>
           <Col sm={3}></Col>
           <Col sm={6}>
-            <span className="text-muted"> Sashco Mistelbacher 2020</span>
+          <span className="text-muted"> Sashco Mistelbacher | {new Date().getUTCDate()}/{new Date().getUTCMonth()}/{new Date().getUTCFullYear()} | <Image src="https://i.imgur.com/o22EHo4.png" /></span>
           </Col>
           <Col sm={3}></Col>
         </Row>

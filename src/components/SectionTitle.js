@@ -1,10 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row  } from 'react-bootstrap';
+import { Row, Container  } from 'react-bootstrap';
 
 function SectionTitle(props) {
     return (
-        <div></div>
+      <Row className="mb-2">
+        <Container fluid>
+          <h1>{props.title}</h1>
+        </Container>
+      </Row>
     );
   }
 

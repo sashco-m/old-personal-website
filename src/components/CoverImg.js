@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Image, Row } from 'react-bootstrap';
+import { Image, Row } from 'react-bootstrap';
 
 function CoverImg() {
     return (
