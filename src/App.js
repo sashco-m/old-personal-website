@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -6,30 +6,19 @@ import CustomNavbar from './components/custom-navbar.js';
 import CoverImg from './components/CoverImg.js';
 import SectionTitle from './components/SectionTitle.js';
 
-import { Card, Col, Container, Image, Row, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Collapse, Button, Card, Col, Container, Image, Row, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import SectionBody from './components/SectionBody';
 
 function App() {
-  function CardHoverEnter(id){
-    document.getElementById(id).style.transition="transform 1s"
-  }
+  const [open, setOpen] = useState(false);
 
   return (
     <div style={{overflowX:"hidden"}}>
       <CustomNavbar />
       <CoverImg />
       <Row>
-        <Image style={{objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
-        <Container className="border" style={{backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} fluid>
-          {/*Make an hr compontent*/}
-            {/* <Row>
-              <Col className="" xl={3} lg={1} ></Col>
-                <Col xl={6} lg={10}>
-                  <hr className="border"></hr>
-                </Col>
-              <Col className="" xl={3} lg={1} ></Col>
-            </Row> */}
-
+        <Image style={{marginTop:"-8px",objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
+        <Container className="border" style={{borderRadius:"40px", backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} fluid>
 
           <Row style={{textAlign:""}} className="m-1" fluid>
             
@@ -38,8 +27,8 @@ function App() {
             <hr className="border"></hr>
               
               <SectionTitle title="About" />
-              <Row className="mb-4">
-                <Col md={7}>
+              <Row className="mb-3">
+                <Col className="mb-3" md={7}>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <ul>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
@@ -49,8 +38,9 @@ function App() {
                 </Col>
                 <Col md={5}>
                   
-                  <Image src="https://i.imgur.com/VDpuKi9.jpg" thumbnail/>
-                  
+                  <Image className="mb-4" style={{boxShadow:"5px 5px 15px -1px rgba(0,0,0,0.49)"}} src="https://i.imgur.com/VDpuKi9.jpg" thumbnail/>
+                  <span><Button variant="outline-primary" size="sm" onClick={()=> setOpen(!open)} aria-controls="test" aria-expanded={open}>Click</Button> to {open ? "hide" : "show"} some of my hobbies!</span>
+
                 </Col>
               </Row>
               
@@ -59,7 +49,8 @@ function App() {
             <Col className="" xl={3} lg={1} ></Col>
           </Row>
           {/*end of about section */}
-          <Row className="m-1">
+          <Collapse in={open}>
+          <Row id="test" className="m-1">
             <Col className="" xl={3} lg={1} ></Col>
               <Col className="" lg={10} xl={6}>
               <Row >
@@ -103,22 +94,23 @@ function App() {
                 </Card>
               </Col>
               </Row>
-                <hr className="border"></hr>
+
               </Col>
               <Col className="" lg={1} xl={3}></Col>
           </Row>
-          
+          </Collapse>
           {/* end of hobbies*/}
           <Row style={{textAlign:""}} className="m-1" fluid>
             
           <Col className="" xl={3} lg={1} ></Col>
             <Col xl={6} lg={10}>
-              
+            <hr className="border"></hr>
               <SectionTitle title="Projects" />
               <Row className="mb-4">
                 <Col md={6}>
                   {/*start of project cards */}
-                  <Card className="mb-3" > 
+                <a style={{textDecoration:"none", color:"black"}} target="_blank" href="https://sashco.pythonanywhere.com/">
+                <Card className="mb-3 projects-box" > 
                   <Card.Img variant="top" src="https://i.imgur.com/QVjqovc.png" />
                   <Card.Body>
                     <Card.Title>Small Business: Bash Vintage</Card.Title>
@@ -127,9 +119,10 @@ function App() {
                     </Card.Text>
                   </Card.Body>
                 </Card>
+                </a>
                 </Col>
                 <Col md={6}>
-                <Card className="mb-3" > 
+                <Card className="mb-3 projects-box" > 
                   <Card.Img variant="top" src="https://i.imgur.com/WVXL1uG.png" />
                   <Card.Body>
                     <Card.Title>Java Travel Agency Database</Card.Title>
@@ -144,7 +137,7 @@ function App() {
               <Row className="mb-4">
                 <Col md={6}>
                   {/*start of project cards */}
-                  <Card className="mb-3" > 
+                  <Card className="mb-3 projects-box" > 
                   <Card.Img variant="top" src="https://i.imgur.com/yDISwgp.png" />
                   <Card.Body>
                     <Card.Title>Calculator in React</Card.Title>
@@ -155,7 +148,7 @@ function App() {
                 </Card>
                 </Col>
                 <Col md={6}>
-                <Card className="mb-3" > 
+                <Card className="mb-3 projects-box" > 
                   <Card.Img variant="top" src="https://i.imgur.com/8gzBwJu.png" />
                   <Card.Body>
                     <Card.Title>Art Portfolio</Card.Title>
