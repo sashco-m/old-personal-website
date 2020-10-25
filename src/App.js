@@ -39,7 +39,7 @@ function App() {
                 <Col md={5}>
                   
                   <Image className="mb-4" style={{boxShadow:"5px 5px 15px -1px rgba(0,0,0,0.49)"}} src="https://i.imgur.com/VDpuKi9.jpg" thumbnail/>
-                  <span><Button variant="outline-primary" size="sm" onClick={()=> setOpen(!open)} aria-controls="test" aria-expanded={open}>Click</Button> to {open ? "hide" : "show"} some of my hobbies!</span>
+                  <Button variant="outline-primary" size="sm" onClick={()=> setOpen(!open)} aria-controls="test" aria-expanded={open} block>Click to {open ? "hide" : "show"} some of my hobbies!</Button>
 
                 </Col>
               </Row>
@@ -110,7 +110,7 @@ function App() {
                 <Col md={6}>
                   {/*start of project cards */}
                 <a style={{textDecoration:"none", color:"black"}} target="_blank" href="https://sashco.pythonanywhere.com/">
-                <Card className="mb-3 projects-box" > 
+                <Card className="mb-3 projects-box"> 
                   <Card.Img variant="top" src="https://i.imgur.com/QVjqovc.png" />
                   <Card.Body>
                     <Card.Title>Small Business: Bash Vintage</Card.Title>
