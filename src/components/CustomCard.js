@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image, Row } from 'react-bootstrap';
+import { Image, Row, Card, Container } from 'react-bootstrap';
 
 function CustomCard(props) {
     return (

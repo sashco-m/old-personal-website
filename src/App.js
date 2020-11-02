@@ -6,12 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from './components/custom-navbar.js';
 import CoverImg from './components/CoverImg.js';
 import SectionTitle from './components/SectionTitle.js';
+import CustomCard from './components/CustomCard.js';
+import Footer from './components/Footer.js';
+import About from './components/About.js';
 
 import { Collapse, Button, Card, Col, Container, Image, Row, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import SectionBody from './components/SectionBody';
+import Projects from './components/Projects';
 
 function App() {
   const [open, setOpen] = useState(false);
+  const projectImgs=["https://i.imgur.com/QVjqovc.png","https://i.imgur.com/WVXL1uG.png","https://i.imgur.com/yDISwgp.png","https://i.imgur.com/8gzBwJu.png"]
+  const projectLinks=["https://sashco.pythonanywhere.com/","","",""]
+  const projectTitles=["Python: Bash Vintage","Java: GUI Database","Reactjs: Calculator","HTML/CSS: Art Portfolio"]
+  const projectDescriptions=["Test bash desc","Test tacad description","test calc desc","test artfolio desc"]
 
   return (
     <div style={{overflowX:"hidden"}}>
@@ -23,159 +31,28 @@ function App() {
       <Row>
         <Image style={{marginTop:"-8px",objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
         <Container className="border" style={{borderRadius:"40px", backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} fluid>
-
-          <Row style={{textAlign:""}} className="m-1" fluid>
-            
-          <Col className="" xl={3} lg={1} ></Col>
-            <Col xl={6} lg={10}>
-            <hr className="border"></hr>
-              
-              <SectionTitle title="About" />
-              <Row className="mb-3">
-                <Col className="mb-3" md={7}>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</li>
-                  </ul>
-                </Col>
-                <Col md={5}>
-                  
-                  <Image className="mb-4" style={{boxShadow:"5px 5px 15px -1px rgba(0,0,0,0.49)"}} src="https://i.imgur.com/VDpuKi9.jpg" thumbnail/>
-                  <Button variant="outline-primary" size="sm" onClick={()=> setOpen(!open)} aria-controls="test" aria-expanded={open} block>Click to {open ? "hide" : "show"} some of my hobbies!</Button>
-
-                </Col>
-              </Row>
-              
-              
-            </Col>
-            <Col className="" xl={3} lg={1} ></Col>
-          </Row>
-          {/*end of about section */}
-          <Collapse in={open}>
-          <Row id="test" className="m-1">
-            <Col className="" xl={3} lg={1} ></Col>
-              <Col className="" lg={10} xl={6}>
-              <Row >
-              <Col sm={4}>
-                <Card className="mb-3" style={{textAlign:"left"}} > 
-                  <Card.Img variant="top" src="https://i.imgur.com/3oqcDP6.jpg" />
-                  <Card.Body>
-                    <Card.Title>Robotics</Card.Title>
-                    <Card.Text>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <Container fluid>
-                    <a target="_blank" href="https://www.instagram.com/tv/B9mSro9gO8J/?utm_source=ig_web_copy_link">Robot Reveal Video</a>
-                    </Container>
-                    <Container fluid>
-                    <a target="_blank" href="https://imgur.com/a/VX4x7Lx">Photo Album</a>
-                    </Container>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col sm={4}>
-                <Card className="mb-3" style={{textAlign:"left"}} > 
-                  <Card.Img variant="top" src="https://i.imgur.com/Kc7LlMF.jpg" />
-                  <Card.Body>
-                    <Card.Title>Woodworking</Card.Title>
-                    <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col sm={4}>
-                <Card className="mb-3" style={{textAlign:"left"}} > 
-                  <Card.Img variant="top" src="https://i.imgur.com/ynJuJ2a.png" />
-                  <Card.Body>
-                    <Card.Title>Guitar</Card.Title>
-                    <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              </Row>
-
-              </Col>
-              <Col className="" lg={1} xl={3}></Col>
-          </Row>
-          </Collapse>
+        {/*start of main container */}
+          <About 
+            introText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            goal1="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            goal2="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            goal3="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            imgSrc="https://i.imgur.com/VDpuKi9.jpg"
+          />
           {/* end of hobbies*/}
-          <Row style={{textAlign:""}} className="m-1" fluid>
-            
-          <Col className="" xl={3} lg={1} ></Col>
-            <Col xl={6} lg={10}>
-            <hr className="border"></hr>
-              <SectionTitle title="Projects" />
-              <Row className="mb-4">
-                <Col md={6}>
-                  {/*start of project cards */}
-                <a style={{textDecoration:"none", color:"black"}} target="_blank" href="https://sashco.pythonanywhere.com/">
-                <Card className="mb-3 projects-box"> 
-                  <Card.Img variant="top" src="https://i.imgur.com/QVjqovc.png" />
-                  <Card.Body>
-                    <Card.Title>Small Business: Bash Vintage</Card.Title>
-                    <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                </a>
-                </Col>
-                <Col md={6}>
-                <Card className="mb-3 projects-box" > 
-                  <Card.Img variant="top" src="https://i.imgur.com/WVXL1uG.png" />
-                  <Card.Body>
-                    <Card.Title>Java Travel Agency Database</Card.Title>
-                    <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                
-                </Col>
-              </Row>
-              <Row className="mb-4">
-                <Col md={6}>
-                  {/*start of project cards */}
-                  <Card className="mb-3 projects-box" > 
-                  <Card.Img variant="top" src="https://i.imgur.com/yDISwgp.png" />
-                  <Card.Body>
-                    <Card.Title>Calculator in React</Card.Title>
-                    <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                </Col>
-                <Col md={6}>
-                <Card className="mb-3 projects-box" > 
-                  <Card.Img variant="top" src="https://i.imgur.com/8gzBwJu.png" />
-                  <Card.Body>
-                    <Card.Title>Art Portfolio</Card.Title>
-                    <Card.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-                
-                </Col>
-              </Row>
-              <hr className="border"></hr>
-
-              
-            </Col>
-            <Col className="" xl={3} lg={1} ></Col>
-          </Row>
+          
+          <Projects 
+            projectImg={["https://i.imgur.com/QVjqovc.png","https://i.imgur.com/WVXL1uG.png","https://i.imgur.com/yDISwgp.png","https://i.imgur.com/8gzBwJu.png"]}
+            projectLink={["https://sashco.pythonanywhere.com/","","",""]}
+            projectTitle={["Python: Bash Vintage","Java: GUI Database","Reactjs: Calculator","HTML/CSS: Art Portfolio"]}
+            projectDescription={["Test bash desc","Test tacad description","test calc desc","test artfolio desc"]}
+          />
           {/* end of projects */}
           <Row style={{textAlign:""}} className="m-1" fluid>
             
             <Col className="" xl={3} lg={1} ></Col>
               <Col xl={6} lg={10}>
-                
+                <hr className="border"></hr>
                 <SectionTitle title="Work" />
                 <Row>
 
