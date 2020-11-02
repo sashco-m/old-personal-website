@@ -28,6 +28,8 @@ function Projects(props) {
                             coverImg={props.projectImg[1]}
                             title={props.projectTitle[1]}
                             description={props.projectDescription[1]}
+                            downloadlink={"https://drive.google.com/uc?export=download&id=1QyJ6CG2G0e4ZDi7zP3e13pK6soUqgJ4g"}
+                            downloadtitle="Download"
                         />
                   </a>
                 </Col>
