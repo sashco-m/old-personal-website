@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Helmet } from 'react-helmet';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,6 +15,9 @@ function App() {
 
   return (
     <div style={{overflowX:"hidden"}}>
+      <Helmet>
+        <title>Sashco Mistelbacher - Always Curious</title>
+      </Helmet>
       <CustomNavbar />
       <CoverImg />
       <Row>
@@ -238,7 +242,7 @@ function App() {
         <Row className="footer border mt-auto p-3" bg="light" style={{width:"100%"}} fluid>
           <Col sm={3}></Col>
           <Col sm={6}>
-          <span className="text-muted"> Sashco Mistelbacher | {new Date().getUTCDate()}/{new Date().getUTCMonth()}/{new Date().getUTCFullYear()} | <Image src="https://i.imgur.com/o22EHo4.png" /></span>
+          <span className="text-muted"> Sashco Mistelbacher | {new Date().getUTCDate()}/{new Date().getUTCMonth()+1}/{new Date().getUTCFullYear()} | <Image src="https://i.imgur.com/o22EHo4.png" /></span>
           </Col>
           <Col sm={3}></Col>
         </Row>
