@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle.js';
 
 function Work(props) {
     return (
-         <Row className="m-1">
+         <Row className="m-1 mb-4">
           <Col xl={3} lg={1} ></Col>
             <Col xl={6} lg={10}>
               <hr className="border"></hr>

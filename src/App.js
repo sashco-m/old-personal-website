@@ -15,6 +15,8 @@ import SectionBody from './components/SectionBody';
 import Projects from './components/Projects';
 import { Helmet } from 'react-helmet';
 import { Element, Events, Link, scroller, animateScroll as scroll } from "react-scroll";
+import Tooltip from 'react-bootstrap/Tooltip'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
 class  App extends React.Component {
 
@@ -38,7 +40,7 @@ class  App extends React.Component {
       <Row>
         {/* change this inline style to adjust the position of the main container */}
         <Image style={{marginTop:"-8px",objectFit:"cover",minHeight:"40vh",opacity:"0%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
-        <Container className="border" style={{borderRadius:"40px", backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} fluid>
+        <Container className="border" style={{borderTopLeftRadius:"40px",borderTopRightRadius:"40px", backgroundColor:"white",zIndex:"10",boxShadow: "0px -14px 32px -8px rgba(0,0,0,0.72)"}} fluid>
         {/*start of About */}
           <Element name="about">
             <About 
