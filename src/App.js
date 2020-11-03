@@ -22,24 +22,9 @@ class  App extends React.Component {
     super(props);
     this.scrollToTop=this.scrollToTop.bind(this);
   }
-  componentDidMount() {
 
-    Events.scrollEvent.register('begin', function () {
-      console.log("begin", arguments);
-    });
-
-    Events.scrollEvent.register('end', function () {
-      console.log("end", arguments);
-    });
-
-  }
-  scrollToTop() {
+  scrollToTop = () => {
     scroll.scrollToTop();
-  }
-  
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
   }
 
   render(){
@@ -48,22 +33,7 @@ class  App extends React.Component {
       <Helmet>
         <title>Sashco Mistelbacher - Always Curious</title>
       </Helmet>
-      {/* NAVBAR TEST*/}
-      <Navbar style={{opacity:"0.95",boxShadow: "0px 20px 4px -8px rgba(0,0,0,0.17)"}} fixed="top" bg="light" expand="lg" className="border">
-        <a onClick={this.scrollToTop}><Navbar.Brand style={{cursor:"pointer"}}>Sashco Mistelbacher</Navbar.Brand></a>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" >
-            <Nav className="mr-auto" >
-                <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">About</Nav.Link></Link>
-                <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">Projects</Nav.Link></Link>
-                <Link activeClass="active" to="work" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav mr-3">Work</Nav.Link></Link>
-                <Form inline>
-                  <Button variant="outline-dark" size="sm">Download Résumé</Button>
-                </Form>
-            </Nav>
-        </Navbar.Collapse>
-    </Navbar>
-      {/* NAVBAR TEST*/}
+      <CustomNavbar nameFunc={this.scrollToTop} />
       <CoverImg />
       <Row>
         {/* change this inline style to adjust the position of the main container */}
