@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 {/*0px 20px 4px -8px rgba(0,0,0,0.17) */}
 
