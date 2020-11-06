@@ -8,8 +8,8 @@ window.onload = function(){
 
     window.onscroll = function(){
         let currentPos = window.pageYOffset;
-        let imgScale = currentPos/15000
-        console.log(currentPos/10000);
+        let imgScale = Math.min(currentPos/20000,0.02);
+        //console.log(imgScale);
         mainImg.style.filter = "blur(" + currentPos/200 + "px)";
         mainImg.style.transform = "scale("+(1+imgScale)+")";
     };
