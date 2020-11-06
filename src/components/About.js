@@ -25,7 +25,7 @@ function About(props) {
                     </Col>
                     <Col md={5}>
                         <Image className="mb-4" style={{boxShadow:"5px 5px 15px -1px rgba(0,0,0,0.49)"}} src={props.imgSrc} thumbnail/>
-                        <Button variant="outline-primary" size="sm" onClick={()=> setOpen(!open)} aria-controls="hobbytarget" aria-expanded={open} block>Click to {open ? "hide" : "show"} some of my hobbies!</Button>
+                        <Button variant="primary" size="sm" onClick={()=> setOpen(!open)} aria-controls="hobbytarget" aria-expanded={open} block>Click to {open ? "hide" : "show"} some of my hobbies!</Button>
                     </Col>
                 </Row>
             </Col>
