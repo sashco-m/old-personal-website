@@ -20,7 +20,7 @@ function About(props) {
                     <p>
                       Hello! I'm Sashco Mistelbacher. I'm currently in my <strong>
                         {{'2020': "first","2021":"second","2022":"third","2023":"fourth","2025":"fifth"}[new Date().getUTCFullYear()]}
-                      </strong> year as a cs student at uw. 
+                      </strong> year as a cs student at uw. I'm interested in many things, namely the <strong>internet</strong>, <strong>business</strong> and <strong>art</strong>. Here's a quick list of some recent things I've done:
                       </p>
                       <p>I run a second-hand clothes store called <strong><a target="_blank" href="https://sashco.pythonanywhere.com/">Bash Vintage</a></strong> in
                       my free time. 
@@ -28,6 +28,29 @@ function About(props) {
                       <p>
                         I mentor FIRST Robotics <strong><a target="_blank" href="https://www.instagram.com/frc4252/">Team 4252</a></strong>.
                     </p>
+                    <p>
+                      Over the summer, I worked three weeks doing craft on a <strong><a target="_blank" href="https://www.imdb.com/title/tt12717388/?ref_=ttfc_fc_tt">movie</a></strong>.
+                    </p>
+                    <Row>
+                    <Col xl={6}>
+                      <h6>Some of my immediate goals:</h6>
+                      <ul>
+                          <li>participate in upcoming hackathons over the winter</li>
+                          <li>make smart investments</li>
+                          <li>make an app with flutter</li>
+                          <li>gain experience working in the tech sector</li>
+                      </ul>
+                    </Col>
+                    <Col xl={6}>
+                    <h6>Some of my long-term ideals:</h6>
+                      <ul>
+                          <li>try to make the world a better place</li>
+                          <li>post my song covers on youtube</li>
+                          <li>buy a tesla someday</li>
+                          <li>never stop learning</li>
+                      </ul>
+                    </Col>
+                    </Row>
 
                     </Col>
                     <Col md={5}>
