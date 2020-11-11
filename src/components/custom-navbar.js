@@ -18,8 +18,6 @@ function handlePhoneCopy(){
 }
 
 function CustomNavbar(props) {
-    const [show, setShow]=useState(false);
-    const target = useRef(null);
 
     return (
         <Navbar style={{opacity:"0.95",boxShadow: "0px 20px 4px -8px rgba(0,0,0,0.17)"}} fixed="top" bg="light" expand="lg" className="border">

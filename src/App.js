@@ -44,10 +44,6 @@ class  App extends React.Component {
         {/*start of About */}
           <Element name="about">
             <About 
-              introText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              goal1="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              goal2="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              goal3="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
               imgSrc="https://i.imgur.com/VDpuKi9.jpg"
             />
           </Element>
@@ -57,7 +53,10 @@ class  App extends React.Component {
               projectImg={["https://i.imgur.com/QVjqovc.png","https://i.imgur.com/WVXL1uG.png","https://i.imgur.com/yDISwgp.png","https://i.imgur.com/8gzBwJu.png"]}
               projectLink={["https://sashco.pythonanywhere.com/","https://github.com/sashco-m/Graphical-Database","https://calculator.sashco.repl.co/","https://artportfolio.sashco.repl.co/"]}
               projectTitle={["Python: Bash Vintage","Java: GUI Database","Reactjs: Calculator","HTML/CSS: Art Portfolio"]}
-              projectDescription={["Test bash desc","Test tacad description","test calc desc","test artfolio desc"]}
+              projectDescription={["An online vintage clothes store that I began operating in 2019. I've shipped packages all across Canada, from Vancouver to Montreal. This iteration of the website was built using flask, as my final project for CS50.",
+                                   "I built this database with a friend as a final project for my highschool CS course. Despite Java's steep learning curve, I made something I was really proud of. It has all the CRUD operations, as well as a list to display every element. Click the link to download and try for yourself!",
+                                   "My first experiment with React. It helped solidify the concepts of state and components. The skills gained from this simple calculator helped make this personal website!",
+                                   "I was commissioned by a friend to build a website to show off his art. I achieved my goal of learning more about layered animations in css."]}
             />
           </Element>
           {/* Start of Work */}

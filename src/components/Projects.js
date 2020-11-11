@@ -14,7 +14,8 @@ function Projects(props) {
               <SectionTitle title="Projects" />
                   <Row className="mb-4">
                 <Col md={6}>
-                  <a style={{textDecoration:"none", color:"black"}} target="_blank" href={props.projectLink[0]}>
+
+                  <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[0]}>
                     <CustomCard 
                           coverImg={props.projectImg[0]}
                           title={props.projectTitle[0]}
@@ -23,7 +24,7 @@ function Projects(props) {
                   </a>
                 </Col>
                 <Col md={6}>
-                  <a style={{textDecoration:"none", color:"black"}} target="_blank" href={props.projectLink[1]}>
+                  <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[1]}>
                     <CustomCard 
                             coverImg={props.projectImg[1]}
                             title={props.projectTitle[1]}
@@ -36,7 +37,7 @@ function Projects(props) {
               </Row>
               <Row className="mb-4">
                 <Col md={6}>
-                  <a style={{textDecoration:"none", color:"black"}} target="_blank" href={props.projectLink[2]}>
+                  <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[2]}>
                     <CustomCard 
                             coverImg={props.projectImg[2]}
                             title={props.projectTitle[2]}
@@ -45,7 +46,7 @@ function Projects(props) {
                 </a>
                 </Col>
                 <Col md={6}>
-                  <a style={{textDecoration:"none", color:"black"}} target="_blank" href={props.projectLink[3]}>
+                  <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[3]}>
                     <CustomCard 
                             coverImg={props.projectImg[3]}
                             title={props.projectTitle[3]}
