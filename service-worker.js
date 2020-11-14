@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sashco-m.github.io/precache-manifest.bbbba1b4acafbd4588a68a9f596e02d9.js"
+  "/sashco-m.github.io/precache-manifest.80ccdb45e4ba9052fd78d6eb2ec20eb2.js"
 );
 
 self.addEventListener('message', (event) => {

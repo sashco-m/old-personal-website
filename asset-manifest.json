@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sashco-m.github.io/static/css/main.09add1b9.chunk.css",
-    "main.js": "/sashco-m.github.io/static/js/main.7870bcf3.chunk.js",
-    "main.js.map": "/sashco-m.github.io/static/js/main.7870bcf3.chunk.js.map",
+    "main.js": "/sashco-m.github.io/static/js/main.c0cd155f.chunk.js",
+    "main.js.map": "/sashco-m.github.io/static/js/main.c0cd155f.chunk.js.map",
     "runtime-main.js": "/sashco-m.github.io/static/js/runtime-main.10d60d49.js",
     "runtime-main.js.map": "/sashco-m.github.io/static/js/runtime-main.10d60d49.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/sashco-m.github.io/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.e9840ba3.chunk.js": "/sashco-m.github.io/static/js/2.e9840ba3.chunk.js",
     "static/js/2.e9840ba3.chunk.js.map": "/sashco-m.github.io/static/js/2.e9840ba3.chunk.js.map",
     "index.html": "/sashco-m.github.io/index.html",
-    "precache-manifest.bbbba1b4acafbd4588a68a9f596e02d9.js": "/sashco-m.github.io/precache-manifest.bbbba1b4acafbd4588a68a9f596e02d9.js",
+    "precache-manifest.80ccdb45e4ba9052fd78d6eb2ec20eb2.js": "/sashco-m.github.io/precache-manifest.80ccdb45e4ba9052fd78d6eb2ec20eb2.js",
     "service-worker.js": "/sashco-m.github.io/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/sashco-m.github.io/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.09add1b9.chunk.css.map": "/sashco-m.github.io/static/css/main.09add1b9.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.e9840ba3.chunk.js",
     "static/css/main.09add1b9.chunk.css",
-    "static/js/main.7870bcf3.chunk.js"
+    "static/js/main.c0cd155f.chunk.js"
   ]
 }
