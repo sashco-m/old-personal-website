@@ -91,7 +91,7 @@ function About(props) {
               </Col>
               <Col sm={4}>
                 <CustomCard 
-                    coverImg="https://i.imgur.com/ynJuJ2a.png" 
+                    coverImg="https://i.imgur.com/D6QMwHb.png" 
                     title="Guitar" 
                     description="test for Guitar" 
                 />

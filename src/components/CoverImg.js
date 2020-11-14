@@ -18,7 +18,7 @@ window.onload = function(){
 function CoverImg() {
     return (
         <Row style={{position:"fixed"}} fluid>
-            <Image id="mainImg" style={{objectFit:"cover",minHeight:"40vh",width:"100%",height:"100%"}} src="https://i.imgur.com/jey24yC.jpg" fluid />
+            <Image id="mainImg" style={{objectFit:"cover",minHeight:"40vh",width:"100%",height:"100%"}} src="https://i.imgur.com/OZiqzXD.jpg" fluid />
         </Row>
     );
   }
