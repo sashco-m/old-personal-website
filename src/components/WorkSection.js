@@ -3,6 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Container  } from 'react-bootstrap';
 
 function WorkSection(props) {
+  let respList = props.work[3].map((item,index)=>{
+    return <li key={index}>{item}</li>
+  })
+
     return (
       <Row>
       <Container fluid>
@@ -13,6 +17,9 @@ function WorkSection(props) {
           </Container>
           <Container fluid>
           <p>{props.work[2]}</p>
+          <ul>
+            {respList}
+          </ul>
       </Container>
     </Row>
     );

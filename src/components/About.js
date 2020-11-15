@@ -72,8 +72,8 @@ function About(props) {
               <Col sm={4}>
                 <CustomCard 
                     coverImg="https://i.imgur.com/3oqcDP6.jpg" 
-                    title="robotics" 
-                    description="test for robotics" 
+                    title="Robotics" 
+                    description="After being the head engineer, I am now a mentor for team 4252. It was a blast building something of your own design, and programming it as well." 
                     link1="https://www.instagram.com/tv/B9mSro9gO8J/?utm_source=ig_web_copy_link" 
                     link1title="Robot Reveal Video" 
                     link2="https://imgur.com/a/VX4x7Lx" 
@@ -84,7 +84,7 @@ function About(props) {
                 <CustomCard 
                     coverImg="https://i.imgur.com/Kc7LlMF.jpg" 
                     title="Woodworking" 
-                    description="test for Woodworking" 
+                    description="My idea for a valentine's day gift sprouted into a passion I didn't know I had. I enjoy how patience and planning pays off in making something nice." 
                     link1="https://imgur.com/a/8Xr2Vyh" 
                     link1title="Photo Album" 
                 />
@@ -93,7 +93,7 @@ function About(props) {
                 <CustomCard 
                     coverImg="https://i.imgur.com/D6QMwHb.png" 
                     title="Guitar" 
-                    description="test for Guitar" 
+                    description="I've been playing guitar since 2016, and I hope to eventually make a youtube channel with a collection of my song covers."
                 />
               </Col>
               </Row>
