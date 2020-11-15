@@ -36,8 +36,8 @@ function About(props) {
                       <h6>Some of my immediate goals:</h6>
                       <ul>
                           <li>participate in upcoming hackathons over the winter</li>
-                          <li>make smart investments</li>
                           <li>make an app with flutter</li>
+                          <li>make an amazon affiliate site</li>
                           <li>gain experience working in the tech sector</li>
                       </ul>
                     </Col>
@@ -46,15 +46,15 @@ function About(props) {
                       <ul>
                           <li>try to make the world a better place</li>
                           <li>post my song covers on youtube</li>
+                          <li>make smart investments</li>
                           <li>buy a tesla someday</li>
-                          <li>never stop learning</li>
                       </ul>
                     </Col>
                     </Row>
 
                     </Col>
                     <Col md={5}>
-                        <Image className="mb-4" style={{boxShadow:"5px 5px 15px -1px rgba(0,0,0,0.49)"}} src={props.imgSrc} thumbnail/>
+                        <Image className="mb-4" style={{boxShadow:"5px 5px 15px -1px rgba(0,0,0,0.49)"}} src={props.imgSrc} alt="Sashco Mistelbacher" thumbnail/>
                         <Button variant="primary" size="sm" onClick={()=> setOpen(!open)} aria-controls="hobbytarget" aria-expanded={open} block>Click to {open ? "hide" : "show"} some of my hobbies!</Button>
                     </Col>
                 </Row>
