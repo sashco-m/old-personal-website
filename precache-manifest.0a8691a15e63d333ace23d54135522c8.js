@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b754ca611526078c6be28d16f5093e6a",
+    "revision": "6955a47aaf4cf975e4d8fdc874607202",
     "url": "/sashco-m.github.io/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sashco-m.github.io/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "0836d6142a9a6d2de25d",
+    "revision": "1430bc8d479bb591fe5e",
     "url": "/sashco-m.github.io/static/css/main.09add1b9.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sashco-m.github.io/static/js/2.e9840ba3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0836d6142a9a6d2de25d",
-    "url": "/sashco-m.github.io/static/js/main.a2053471.chunk.js"
+    "revision": "1430bc8d479bb591fe5e",
+    "url": "/sashco-m.github.io/static/js/main.c7bc9f09.chunk.js"
   },
   {
     "revision": "119391dfbad0d4f6dc07",
