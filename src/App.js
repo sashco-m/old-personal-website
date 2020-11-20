@@ -18,10 +18,15 @@ import { Element, Events, Link, scroller, animateScroll as scroll } from "react-
 import Tooltip from 'react-bootstrap/Tooltip'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 
+
+import ReactGA from 'react-ga';
+
 class  App extends React.Component {
 
   constructor(props){
     super(props);
+    ReactGA.initialize('UA-166186688-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     this.scrollToTop=this.scrollToTop.bind(this);
   }
 
@@ -32,6 +37,7 @@ class  App extends React.Component {
   render(){
   return (
     <div style={{overflowX:"hidden"}}>
+
       <Helmet>
         <title>Sashco Mistelbacher - Always Curious</title>
       </Helmet>
