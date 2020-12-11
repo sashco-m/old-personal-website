@@ -6,7 +6,7 @@ function SectionTitle(props) {
     return (
       <Row className="mb-2">
         <Container fluid>
-          <h1>{props.title}</h1>
+          <h1 className="title-shadow">{props.title}</h1>
         </Container>
       </Row>
     );

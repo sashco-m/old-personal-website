@@ -13,6 +13,14 @@
     -webkit-tap-highlight-color:transparent;
     -webkit-user-select: none;
   }
+  /*#A0A0A0 #0099cc -blue*/
+
+  .title-shadow{
+    text-shadow: 1px 1px 	#A0A0A0, 
+                2px 2px 		#A0A0A0, 
+                3px 3px 		#A0A0A0,
+                4px 4px		#A0A0A0;
+  }
 
   .active{
     
