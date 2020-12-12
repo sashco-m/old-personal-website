@@ -17,6 +17,8 @@ function Projects(props) {
 
                   <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[0]}>
                     <CustomCard 
+                          mark="Python:"
+                          markColour="#FFFACD"
                           coverImg={props.projectImg[0]}
                           title={props.projectTitle[0]}
                           description={props.projectDescription[0]}
@@ -26,6 +28,8 @@ function Projects(props) {
                 <Col md={6}>
                   <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[1]}>
                     <CustomCard 
+                            mark="Java:"
+                            markColour="#fed8b1"
                             coverImg={props.projectImg[1]}
                             title={props.projectTitle[1]}
                             description={props.projectDescription[1]}
@@ -39,6 +43,8 @@ function Projects(props) {
                 <Col md={6}>
                   <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[2]}>
                     <CustomCard 
+                            mark="Reactjs:"
+                            markColour="#add8e6"
                             coverImg={props.projectImg[2]}
                             title={props.projectTitle[2]}
                             description={props.projectDescription[2]}
@@ -48,6 +54,8 @@ function Projects(props) {
                 <Col md={6}>
                   <a style={{textDecoration:"none", color:"black"}} target="_blank" rel="noopener noreferrer" href={props.projectLink[3]}>
                     <CustomCard 
+                            mark="HTML/CSS:"
+                            markColour="#ffcccb"
                             coverImg={props.projectImg[3]}
                             title={props.projectTitle[3]}
                             description={props.projectDescription[3]}

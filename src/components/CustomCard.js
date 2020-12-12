@@ -7,7 +7,7 @@ function CustomCard(props) {
         <Card className="mb-3 projects-box" style={{textAlign:"left"}} > 
             <Card.Img variant="top" src={props.coverImg} />
                 <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
+                    <Card.Title>{props.mark && <mark style={{backgroundColor: props.markColour}}>{props.mark}</mark>}{props.title}</Card.Title>
                     <Card.Text>
                     <p>{props.description}</p>
                     {props.link1 && <Container fluid><a target="_blank" href={props.link1}>{props.link1title}</a></Container>}
