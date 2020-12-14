@@ -20,7 +20,7 @@ function About(props) {
                     <p>
                       Hello! I'm Sashco Mistelbacher. I'm currently in my <strong>
                         {{'2020': "first","2021":"second","2022":"third","2023":"fourth","2025":"fifth"}[new Date().getUTCFullYear()]}
-                      </strong> year as a cs student at uw. I'm interested in many things, namely the <strong>internet</strong>, <strong>business</strong> and <strong>art</strong>. Here's a quick list of some recent things I've done:
+                      </strong> year as a cs student at <strong><a target="_blank" href="https://www.google.com/maps/place/University+of+Waterloo/@43.4722854,-80.5448576,15z/data=!4m5!3m4!1s0x0:0xdd9df23996268e17!8m2!3d43.4722854!4d-80.5448576">uw</a></strong>. I'm interested in many things, namely the <strong>internet</strong>, <strong>business</strong> and <strong>art</strong>. Here's a quick list of some recent things I've done:
                       </p>
                       <p>I run a second-hand clothes store called <strong><a target="_blank" href="https://sashco.pythonanywhere.com/">Bash Vintage</a></strong> in
                       my free time. 
@@ -30,6 +30,9 @@ function About(props) {
                     </p>
                     <p>
                       Over the summer, I worked three weeks doing craft on a <strong><a target="_blank" href="https://www.imdb.com/title/tt12717388/?ref_=ttfc_fc_tt">movie</a></strong>.
+                    </p>
+                    <p>
+                      Catch me on <strong><a target="_blank" href="https://github.com/sashco-m">Github</a></strong>, <strong><a target="_blank" href="https://www.linkedin.com/in/sashco-mistelbacher-2b94681b5/">LinkedIn</a></strong> and <strong><a target="_blank" href="https://www.instagram.com/sashco.m/">Instagram</a></strong>.
                     </p>
                     <Row>
                     <Col xl={6}>
