@@ -56,10 +56,12 @@ class  App extends React.Component {
           {/* Start of Projects*/}
           <Element name="projects">
             <Projects 
-              projectImg={["https://i.imgur.com/pxxn17a.png","https://i.imgur.com/JXl5GrG.png","https://i.imgur.com/y1intd3.png","https://i.imgur.com/A4jR81l.png"]}
-              projectLink={["https://sashco.pythonanywhere.com/","https://github.com/sashco-m/Graphical-Database","https://calculator.sashco.repl.co/","https://artportfolio.sashco.repl.co/"]}
-              projectTitle={[" Bash Vintage"," GUI Database"," Calculator"," Art Portfolio"]}
-              projectDescription={["An online vintage clothes store that I began operating in 2019. I've shipped packages all across Canada, from Vancouver to Montreal. This iteration of the website was built using flask, as my final project for CS50.",
+              projectImg={["https://i.imgur.com/Sigs75v.png","https://i.imgur.com/sl7AMum.png","https://i.imgur.com/pxxn17a.png","https://i.imgur.com/JXl5GrG.png","https://i.imgur.com/y1intd3.png","https://i.imgur.com/A4jR81l.png"]}
+              projectLink={["https://forthrightserpentinebase.sashco.repl.co/","http://memorablesuddenproblems.sashco.repl.co/login","https://sashco.pythonanywhere.com/","https://github.com/sashco-m/Graphical-Database","https://calculator.sashco.repl.co/","https://artportfolio.sashco.repl.co/"]}
+              projectTitle={[" Uni Student Lifesaver"," Money Manager"," Bash Vintage"," GUI Database"," Calculator"," Art Portfolio"]}
+              projectDescription={["Our submission to QHacks 2021 is a simple yet powerful event management app, which utilizes Vonage's SMS API to send reminders. It also supports exporting events to an .ics file to upload to other calendar software. A lot of time was put into a minimalistic design and straightforward user experience, which I think we nailed.",
+                                   "Our submission to Hack The North 2021. It utilizes Microsoft's Azure machine learning OCR API to read details off of receipts, and Vonage's SMS API to send the user text-message reminders about billing dates. It was challenging to implement every function in only 36 hours, but we did it and ended up with something great.",
+                                   "An online vintage clothes store that I began operating in 2019. I've shipped packages all across Canada, from Vancouver to Montreal. This iteration of the website was built using flask, as my final project for CS50.",
                                    "I built this database with a friend as a final project for my highschool CS course. Despite Java's steep learning curve, I made something I was really proud of. It has all the CRUD operations, as well as a list to display every element. Click the link to download and try for yourself!",
                                    "My first experiment with React. It helped solidify the concepts of state and components. The skills gained from this simple calculator helped make this personal website!",
                                    "I was commissioned by a friend to build a website to show off his art. I achieved my goal of learning more about layered animations in css."]}
