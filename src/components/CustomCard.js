@@ -13,6 +13,7 @@ function CustomCard(props) {
                     {props.link1 && <Container fluid><a target="_blank" href={props.link1}>{props.link1title}</a></Container>}
                     {props.link2 && <Container fluid><a target="_blank" href={props.link2}>{props.link2title}</a></Container>}
                     {props.downloadlink && <Container fluid><a href={props.downloadlink} download>{props.downloadtitle}</a></Container>}
+                    {props.noteTitle && <Container fluid><p><strong>{props.noteTitle}</strong> {props.note}</p></Container>}
                 </Card.Text>
             </Card.Body>
         </Card>

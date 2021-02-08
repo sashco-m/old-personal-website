@@ -22,6 +22,10 @@ function Projects(props) {
                             coverImg={props.projectImg[0]}
                             title={props.projectTitle[0]}
                             description={props.projectDescription[0]}
+                            noteTitle={props.noteTitle[0]}
+                            note={props.note[0]}
+                            link1={props.link1[0]}
+                            link1title={props.link1title[0]}
                         />
                     </a>
                   </Col>
@@ -33,6 +37,10 @@ function Projects(props) {
                               coverImg={props.projectImg[1]}
                               title={props.projectTitle[1]}
                               description={props.projectDescription[1]}
+                              noteTitle={props.noteTitle[1]}
+                              note={props.note[1]}
+                              link1={props.link1[1]}
+                              link1title={props.link1title[1]}
                           />
                     </a>
                   </Col>
@@ -61,6 +69,8 @@ function Projects(props) {
                             description={props.projectDescription[3]}
                             downloadlink={"https://drive.google.com/uc?export=download&id=1QyJ6CG2G0e4ZDi7zP3e13pK6soUqgJ4g"}
                             downloadtitle="Download"
+                            noteTitle={props.noteTitle[3]}
+                            note={props.note[3]}
                         />
                   </a>
                 </Col>
@@ -75,6 +85,8 @@ function Projects(props) {
                             coverImg={props.projectImg[4]}
                             title={props.projectTitle[4]}
                             description={props.projectDescription[4]}
+                            noteTitle={props.noteTitle[4]}
+                            note={props.note[4]}
                         />
                 </a>
                 </Col>
