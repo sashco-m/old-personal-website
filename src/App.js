@@ -39,7 +39,7 @@ class  App extends React.Component {
     <div style={{overflowX:"hidden"}}>
 
       <Helmet>
-        <title>Sashco Mistelbacher - Always Curious</title>
+        <title>Sashco Mistelbacher</title>
       </Helmet>
       <CustomNavbar nameFunc={this.scrollToTop} />
       <CoverImg />
