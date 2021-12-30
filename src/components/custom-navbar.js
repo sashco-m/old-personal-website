@@ -26,9 +26,9 @@ function CustomNavbar(props) {
         <Navbar.Collapse id="basic-navbar-nav" >
             <Nav className="mr-auto" >
                 <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">About</Nav.Link></Link>
+                <Link activeClass="active" to="work" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">Work</Nav.Link></Link>
                 <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">Projects</Nav.Link></Link>
-                <Link activeClass="active" to="work" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav mr-3">Work</Nav.Link></Link>
-                <Form inline>
+                <Form className="ml-3" inline>
                   <a href={"https://drive.google.com/uc?export=download&id=1e3mrqcXGuhkRTnMK5uK9Ka11GH6IHIr8"} ><Button variant="outline-secondary" size="sm">Download Résumé</Button></a>
                 </Form>
             </Nav>

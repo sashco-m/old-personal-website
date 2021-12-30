@@ -53,6 +53,24 @@ class  App extends React.Component {
               imgSrc="https://i.imgur.com/VDpuKi9.jpg"
             />
           </Element>
+        {/* end of about*/}
+        {/* Start of Work */}
+        <Element name="work">
+            <Work 
+              job1={["Craft Services","Summer 2020",
+                     "Craft is the food department for the film crew. You have a great opportunity to bond with your coworkers and that was the best part for me. I worked on two movies and commercial. Fun gig.",
+                    ["Learned to work in a small team","Operate in a hectic environment",'Work long shifts, being among the first to show up and leave.']]}
+              job2={["Production Assistant","Summer 2019 and 2020",
+                     "Production assistants are the backbone for getting anything done on a filmset. We set up the work environment, putting up tents, tables, chairs etc. We move and keep track of equipment, and make sure poeple don't accidentally wander into frame. You are very independent with this job, so it requires solid knowledge of how the filmsite works and what you should be doing at any given time. Glad to have worked on two commercials as a PA.",
+                     ["Lots of people are happy walking into frame. You have to be a good communicator to convince those people to do otherwise.",
+                     "Trusted with driving production company vehicles and expensive equipment.",'Be able to handle messing up and learn quickly from your mistakes.']]}
+              job3={["Location Support","Summer 2019","What an LSP (Location Support Personnel) does is arrive early to a filmsite, and make sure it is clear when the production arrives. Basically, you place cones in parking spots as cars leave, and make sure no new cars park in the reserved area. I'm happy to have learned from a tough job.",
+                    ["Long shifts, usually over 12 hours.","You have to be comfortable being alone in an unfamiliar place",
+                    "Must be a good communicator. Some people get really angry when you tell them they can't park somewhere downtown.",
+                    "Need to be independent and have initiative, as you do not have any direct oversight."]]}
+            />
+          </Element>
+          {/* end of work */}
           {/* Start of Projects*/}
           <Element name="projects">
             <Projects 
@@ -71,23 +89,7 @@ class  App extends React.Component {
               link1title={["Devpost Submission","Devpost Submission"]}
             />
           </Element>
-          {/* Start of Work */}
-          <Element name="work">
-            <Work 
-              job1={["Craft Services","Summer 2020",
-                     "Craft is the food department for the film crew. You have a great opportunity to bond with your coworkers and that was the best part for me. I worked on two movies and commercial. Fun gig.",
-                    ["Learned to work in a small team","Operate in a hectic environment",'Work long shifts, being among the first to show up and leave.']]}
-              job2={["Production Assistant","Summer 2019 and 2020",
-                     "Production assistants are the backbone for getting anything done on a filmset. We set up the work environment, putting up tents, tables, chairs etc. We move and keep track of equipment, and make sure poeple don't accidentally wander into frame. You are very independent with this job, so it requires solid knowledge of how the filmsite works and what you should be doing at any given time. Glad to have worked on two commercials as a PA.",
-                     ["Lots of people are happy walking into frame. You have to be a good communicator to convince those people to do otherwise.",
-                     "Trusted with driving production company vehicles and expensive equipment.",'Be able to handle messing up and learn quickly from your mistakes.']]}
-              job3={["Location Support","Summer 2019","What an LSP (Location Support Personnel) does is arrive early to a filmsite, and make sure it is clear when the production arrives. Basically, you place cones in parking spots as cars leave, and make sure no new cars park in the reserved area. I'm happy to have learned from a tough job.",
-                    ["Long shifts, usually over 12 hours.","You have to be comfortable being alone in an unfamiliar place",
-                    "Must be a good communicator. Some people get really angry when you tell them they can't park somewhere downtown.",
-                    "Need to be independent and have initiative, as you do not have any direct oversight."]]}
-            />
-          </Element>
-          {/* end of work */}
+          {/*end of projects */}
         {/*end of main container */}
         </Container> 
         <Footer />

@@ -39,9 +39,6 @@ function About(props) {
                         I mentor FIRST Robotics <strong><a target="_blank" href="https://www.instagram.com/frc4252/">Team 4252</a></strong>.
                     </p>
                     <p>
-                      Over the summer, I worked three weeks doing craft on a <strong><a target="_blank" href="https://www.imdb.com/title/tt12717388/?ref_=ttfc_fc_tt">movie</a></strong>.
-                    </p>
-                    <p>
                       Catch me on <strong><a target="_blank" href="https://github.com/sashco-m">Github</a></strong>, <strong><a target="_blank" href="https://www.linkedin.com/in/sashco-mistelbacher-2b94681b5/">LinkedIn</a></strong> and <strong><a target="_blank" href="https://www.instagram.com/sashco.m/">Instagram</a></strong>.
                     </p>
                     <Row>
