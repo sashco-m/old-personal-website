@@ -45,10 +45,9 @@ function About(props) {
                     <Col xl={6}>
                       <h6>Some of my immediate goals:</h6>
                       <ul>
-                          <li>participate in upcoming hackathons over the winter</li>
                           <li>make an app with flutter</li>
                           <li>make an amazon affiliate site</li>
-                          <li>gain experience working in the tech sector</li>
+                          <li>try new things in the tech sector!</li>
                       </ul>
                     </Col>
                     <Col xl={6}>

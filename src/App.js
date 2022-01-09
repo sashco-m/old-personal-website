@@ -56,6 +56,7 @@ class  App extends React.Component {
         {/* end of about*/}
         {/* Start of Work */}
         <Element name="work">
+          {/*
             <Work 
               job1={["Craft Services","Summer 2020",
                      "Craft is the food department for the film crew. You have a great opportunity to bond with your coworkers and that was the best part for me. I worked on two movies and commercial. Fun gig.",
@@ -68,6 +69,12 @@ class  App extends React.Component {
                     ["Long shifts, usually over 12 hours.","You have to be comfortable being alone in an unfamiliar place",
                     "Must be a good communicator. Some people get really angry when you tell them they can't park somewhere downtown.",
                     "Need to be independent and have initiative, as you do not have any direct oversight."]]}
+            />
+          */}
+          <Work 
+              job1={["Software Engineer at Lean Payments","May - August 2021",
+                     "I had the opportunity to help build the Lean Payments' B2B payments platform. Like any good learning experience, I was thrown right into the deep end and was able to see the entire software development process. We spent the first month designing the architecture with AWS in mind; answering questions such as what type of DB would we use and its schema, push vs pull message queues, our use cases and sequence of endpoints, etc. The next 3 months came the implementation, where I was tasked with the backend. Along the way I learned so many skills, from UML and SQL/noSQL, to JWT authorization and DNS migration. Couldn't have asked for a better place to learn with mentorship always available.",
+                    ["Learned to design serverless applications, synchronous vs asynchronous, UML sequence diagrams","Implemented the platform backend, utilizing many AWS services including Lambda, API gateway, DynamoDB, Aurora RDS, Cognito, Route53, Cloudformation, Cloudfront, S3, to name a few", "Moved the marketing website off of an Apache server and onto S3 + Cloudfront, for fast response times", "In order to have the root domain point to the Cloudfront CDN, we had to migrate our DNS records to Route53 to make use of its special @ record... in the process I missed the MX records and took down company email!"]]}
             />
           </Element>
           {/* end of work */}

@@ -22,7 +22,7 @@ function Work(props) {
                 <WorkSection work={props.job3} />
               }
 
-              <hr className="border"></hr>
+              
             </Col>
           <Col xl={3} lg={1} ></Col>
         </Row>
