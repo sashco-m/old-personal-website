@@ -53,6 +53,31 @@ class  App extends React.Component {
               imgSrc="https://i.imgur.com/VDpuKi9.jpg"
             />
           </Element>
+        {/* end of about*/}
+        {/* Start of Work */}
+        <Element name="work">
+          {/*
+            <Work 
+              job1={["Craft Services","Summer 2020",
+                     "Craft is the food department for the film crew. You have a great opportunity to bond with your coworkers and that was the best part for me. I worked on two movies and commercial. Fun gig.",
+                    ["Learned to work in a small team","Operate in a hectic environment",'Work long shifts, being among the first to show up and leave.']]}
+              job2={["Production Assistant","Summer 2019 and 2020",
+                     "Production assistants are the backbone for getting anything done on a filmset. We set up the work environment, putting up tents, tables, chairs etc. We move and keep track of equipment, and make sure poeple don't accidentally wander into frame. You are very independent with this job, so it requires solid knowledge of how the filmsite works and what you should be doing at any given time. Glad to have worked on two commercials as a PA.",
+                     ["Lots of people are happy walking into frame. You have to be a good communicator to convince those people to do otherwise.",
+                     "Trusted with driving production company vehicles and expensive equipment.",'Be able to handle messing up and learn quickly from your mistakes.']]}
+              job3={["Location Support","Summer 2019","What an LSP (Location Support Personnel) does is arrive early to a filmsite, and make sure it is clear when the production arrives. Basically, you place cones in parking spots as cars leave, and make sure no new cars park in the reserved area. I'm happy to have learned from a tough job.",
+                    ["Long shifts, usually over 12 hours.","You have to be comfortable being alone in an unfamiliar place",
+                    "Must be a good communicator. Some people get really angry when you tell them they can't park somewhere downtown.",
+                    "Need to be independent and have initiative, as you do not have any direct oversight."]]}
+            />
+          */}
+          <Work 
+              job1={["Software Engineer at Lean Payments","May - August 2021",
+                     "I had the opportunity to help build the Lean Payments' B2B payments platform. Like any good learning experience, I was thrown right into the deep end and was able to see the entire software development process. We spent the first month designing the architecture with AWS in mind; answering questions such as what type of DB would we use and its schema, push vs pull message queues, our use cases and sequence of endpoints, etc. The next 3 months came the implementation, where I was tasked with the backend. Along the way I learned so many skills, from UML and SQL/noSQL, to JWT authorization and DNS migration. Couldn't have asked for a better place to learn with mentorship always available.",
+                    ["Learned to design serverless applications, synchronous vs asynchronous, UML sequence diagrams","Implemented the platform backend, utilizing many AWS services including Lambda, API gateway, DynamoDB, Aurora RDS, Cognito, Route53, Cloudformation, Cloudfront, S3, to name a few", "Moved the marketing website off of an Apache server and onto S3 + Cloudfront, for fast response times", "In order to have the root domain point to the Cloudfront CDN, we had to migrate our DNS records to Route53 to make use of its special @ record... in the process I missed the MX records and took down company email!"]]}
+            />
+          </Element>
+          {/* end of work */}
           {/* Start of Projects*/}
           <Element name="projects">
             <Projects 
@@ -71,23 +96,7 @@ class  App extends React.Component {
               link1title={["Devpost Submission","Devpost Submission"]}
             />
           </Element>
-          {/* Start of Work */}
-          <Element name="work">
-            <Work 
-              job1={["Craft Services","Summer 2020",
-                     "Craft is the food department for the film crew. You have a great opportunity to bond with your coworkers and that was the best part for me. I worked on two movies and commercial. Fun gig.",
-                    ["Learned to work in a small team","Operate in a hectic environment",'Work long shifts, being among the first to show up and leave.']]}
-              job2={["Production Assistant","Summer 2019 and 2020",
-                     "Production assistants are the backbone for getting anything done on a filmset. We set up the work environment, putting up tents, tables, chairs etc. We move and keep track of equipment, and make sure poeple don't accidentally wander into frame. You are very independent with this job, so it requires solid knowledge of how the filmsite works and what you should be doing at any given time. Glad to have worked on two commercials as a PA.",
-                     ["Lots of people are happy walking into frame. You have to be a good communicator to convince those people to do otherwise.",
-                     "Trusted with driving production company vehicles and expensive equipment.",'Be able to handle messing up and learn quickly from your mistakes.']]}
-              job3={["Location Support","Summer 2019","What an LSP (Location Support Personnel) does is arrive early to a filmsite, and make sure it is clear when the production arrives. Basically, you place cones in parking spots as cars leave, and make sure no new cars park in the reserved area. I'm happy to have learned from a tough job.",
-                    ["Long shifts, usually over 12 hours.","You have to be comfortable being alone in an unfamiliar place",
-                    "Must be a good communicator. Some people get really angry when you tell them they can't park somewhere downtown.",
-                    "Need to be independent and have initiative, as you do not have any direct oversight."]]}
-            />
-          </Element>
-          {/* end of work */}
+          {/*end of projects */}
         {/*end of main container */}
         </Container> 
         <Footer />

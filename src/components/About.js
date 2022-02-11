@@ -39,19 +39,15 @@ function About(props) {
                         I mentor FIRST Robotics <strong><a target="_blank" href="https://www.instagram.com/frc4252/">Team 4252</a></strong>.
                     </p>
                     <p>
-                      Over the summer, I worked three weeks doing craft on a <strong><a target="_blank" href="https://www.imdb.com/title/tt12717388/?ref_=ttfc_fc_tt">movie</a></strong>.
-                    </p>
-                    <p>
                       Catch me on <strong><a target="_blank" href="https://github.com/sashco-m">Github</a></strong>, <strong><a target="_blank" href="https://www.linkedin.com/in/sashco-mistelbacher-2b94681b5/">LinkedIn</a></strong> and <strong><a target="_blank" href="https://www.instagram.com/sashco.m/">Instagram</a></strong>.
                     </p>
                     <Row>
                     <Col xl={6}>
                       <h6>Some of my immediate goals:</h6>
                       <ul>
-                          <li>participate in upcoming hackathons over the winter</li>
                           <li>make an app with flutter</li>
                           <li>make an amazon affiliate site</li>
-                          <li>gain experience working in the tech sector</li>
+                          <li>try new things in the tech sector!</li>
                       </ul>
                     </Col>
                     <Col xl={6}>

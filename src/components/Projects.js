@@ -102,6 +102,7 @@ function Projects(props) {
                   </a>
                 </Col>
               </Row>
+              <hr className="border"></hr>
             </Col>
           <Col xl={3} lg={1} ></Col>
         </Row>

@@ -26,10 +26,10 @@ function CustomNavbar(props) {
         <Navbar.Collapse id="basic-navbar-nav" >
             <Nav className="mr-auto" >
                 <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">About</Nav.Link></Link>
+                <Link activeClass="active" to="work" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">Work</Nav.Link></Link>
                 <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">Projects</Nav.Link></Link>
-                <Link activeClass="active" to="work" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav mr-3">Work</Nav.Link></Link>
                 <Form inline>
-                  <a href={"https://sashcoresumebucket.s3.us-east-2.amazonaws.com/mistelbacher_sashco_resume+jan+8.pdf"} ><Button variant="outline-secondary" size="sm">View Résumé</Button></a>
+                  <a href={"https://sashcoresumebucket.s3.us-east-2.amazonaws.com/mistelbacher_sashco_resume+jan+8.pdf"} target="_blank"><Button variant="outline-secondary" size="sm">View Résumé</Button></a>
                 </Form>
             </Nav>
             <Nav className="ml-auto">
