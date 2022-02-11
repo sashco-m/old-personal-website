@@ -29,25 +29,25 @@ function CustomNavbar(props) {
                 <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav">Projects</Nav.Link></Link>
                 <Link activeClass="active" to="work" spy={true} smooth={true} duration={500} offset={-180}><Nav.Link className="custom-nav mr-3">Work</Nav.Link></Link>
                 <Form inline>
-                  <a href={"https://drive.google.com/uc?export=download&id=1e3mrqcXGuhkRTnMK5uK9Ka11GH6IHIr8"} ><Button variant="outline-secondary" size="sm">Download Résumé</Button></a>
+                  <a href={"https://sashcoresumebucket.s3.us-east-2.amazonaws.com/mistelbacher_sashco_resume+jan+8.pdf"} ><Button variant="outline-secondary" size="sm">View Résumé</Button></a>
                 </Form>
             </Nav>
             <Nav className="ml-auto">
-                <OverlayTrigger 
-                    key="email" 
-                    placement="bottom" 
+                <OverlayTrigger
+                    key="email"
+                    placement="bottom"
                     overlay={
-                        <Tooltip id="emailTootltip"> 
+                        <Tooltip id="emailTootltip">
                             <strong>Copy</strong> to clipboard
                         </Tooltip>
                     }>
                         <Nav.Link id="myEmail" onClick={handleEmailCopy} className="custom-nav">sashco.mistelbacher@gmail.com</Nav.Link>
                     </OverlayTrigger>
-                    <OverlayTrigger 
-                    key="phone" 
-                    placement="bottom" 
+                    <OverlayTrigger
+                    key="phone"
+                    placement="bottom"
                     overlay={
-                        <Tooltip id="phoneTootltip"> 
+                        <Tooltip id="phoneTootltip">
                             <strong>Copy</strong> to clipboard
                         </Tooltip>
                     }>
